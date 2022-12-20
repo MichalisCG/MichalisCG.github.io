@@ -21,17 +21,19 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
-<h1>Datalayer test</h1>
-<h2>GA4 & Adobe Analytics testing</h2>
-<h3>Order button</h3>
-<a href="choose.html" onclick="udata.push({event_name: 'order', order_id:'BX30294',order_payment_value:'45.00', order_payment_method:'card',order_shipping_fee:'0.50', order_shipping_method:'Bike', order_service_fee:'4.50',order_pickup_point_id:'none',order_product_line:'BX394028' })"><button>Order</button></a>
-<h3>Product button</h3>
-<a href="choose.html"><button>Product</button></a>
-<h2>Button test GA4</h2>
-<h3>Example of a search inside search bar</h3>
-<a href="choose.html" onclick="udata.push({event_name: 'product click', products:{products_id:['3X8302'],products_brand:['boni'], products_category:['beers','trappist',undefined,'aperos','belgium'],products_list:['recipies'], products_name:['coq au vin'],products_price:['9.75'],products_quantity:['2'],products_position:['8'] }})"><button>Search</button></a>
-<h3>Newsletter (un)subcribe</h3>
-<a href="choose.html"><button>Subscribe</button></a>
-<a href="choose.html"><button>Unsubscribe</button></a>
+    <div class="main">
+        <h1>Datalayer test</h1>
+        <h2>GA4 & Adobe Analytics testing</h2>
+        <h3>Order button</h3>
+        <a href="choose.html" onclick="udata.push({event_name: 'order', order_id:'BX30294',order_payment_value:'45.00', order_payment_method:'card',order_shipping_fee:'0.50', order_shipping_method:'Bike', order_service_fee:'4.50',order_pickup_point_id:'none',order_product_line:'BX394028' })"><button>Order</button></a>
+        <h3>Product button</h3>
+        <a href="choose.html"><button>Product</button></a>
+        <h2>Button test GA4</h2>
+        <h3>Example search action inside search bar</h3>
+        <a href="choose.html" onclick="udata.push({event_name: 'product click', products:{products_id:['3X8302'],products_brand:['boni'], products_category:['beers','trappist',undefined,'aperos','belgium'],products_list:['recipies'], products_name:['coq au vin'],products_price:['9.75'],products_quantity:['2'],products_position:['8'] }})"><button>Search</button></a>
+        <h3>Newsletter (un)subcribe</h3>
+        <a href="choose.html"><button>Subscribe</button></a>
+        <a href="choose.html"><button>Unsubscribe</button></a>
+    </div>
 </body>
 </html>
