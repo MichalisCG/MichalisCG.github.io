@@ -27,13 +27,27 @@
         <h3>Order button</h3>
         <a href="choose.html" onclick="udata.push({event_name: 'order', order_id:'BX30294',order_payment_value:'45.00', order_payment_method:'card',order_shipping_fee:'0.50', order_shipping_method:'Bike', order_service_fee:'4.50',order_pickup_point_id:'none',order_product_line:'BX394028' })"><button>Order</button></a>
         <h3>Product button</h3>
-        <a href="choose.html"><button>Product</button></a>
+        <a href="choose.html" onclick="udata.push({event_name: 'product click', products:{products_id:['3X8302'],products_brand:['boni'], products_category:['beers','trappist',undefined,'aperos','belgium'],products_list:['recipies'], products_name:['coq au vin'],products_price:['9.75'],products_quantity:['2'],products_position:['8'] }})"><button>Product</button></a>
         <h2>Button test GA4</h2>
         <h3>Example search action inside search bar</h3>
-        <a href="choose.html" onclick="udata.push({event_name: 'product click', products:{products_id:['3X8302'],products_brand:['boni'], products_category:['beers','trappist',undefined,'aperos','belgium'],products_list:['recipies'], products_name:['coq au vin'],products_price:['9.75'],products_quantity:['2'],products_position:['8'] }})"><button>Search</button></a>
+        <a href="choose.html" onclick="udata.push({event_name: 'search', search_term: 'kiwi', search_category: 'search bare'})"><button>Search</button></a>
         <h3>Newsletter (un)subcribe</h3>
-        <a href="choose.html"><button>Subscribe</button></a>
-        <a href="choose.html"><button>Unsubscribe</button></a>
+        <a href="choose.html" onclick="udata.push({event_name: 'newsletter subscribe', newsletter_name: 'something', newsletter_brand: 'colruyt', newsletter_type: 'conversion_promo_062022'})"><button>Subscribe</button></a>
+        <a href="choose.html" onclick="udata.push({event_name: 'newsletter unsubscribe', newsletter_name: 'something2', newsletter_brand: 'colruyt', newsletter_type: 'conversion_promo_062022'})"><button>Unsubscribe</button></a>
+        <h2>Native Datalayer for Tealium (Colruyt)</h2>
+        <h3>Formule One</h3>
+        <a href="choose.html" class="click_one"><button>Inschrijven</button></a>
+        <a href="choose.html" class="click_one"><button>Cadeau</button></a>
+        <h3>Formule Two</h3>
+        <a href="choose.html" class="click_two"><button>Inschrijven</button></a>
+        <a href="choose.html" class="click_two"><button>Cadeau</button></a>
+        <h2>Native Datalayer for Tealium</h2>
+        <h3>Formule One</h3>
+        <a href="choose.html" onclick="udata.push({event_name: 'interaction', interaction_name: 'customerChoice', interaction_details1: 'Formule One', interaction_details2: 'Type - Abonnement'})"><button>Inschrijven</button></a>
+        <a href="choose.html" onclick="udata.push({event_name: 'interaction', interaction_name: 'customerChoice', interaction_details1: 'Formule One', interaction_details2: 'Type - Cadeau'})"><button>Cadeau</button></a>
+        <h3>Formule Two</h3>
+        <a href="choose.html" onclick="udata.push({event_name: 'interaction', interaction_name: 'customerChoice', interaction_details1: 'Formule Two', interaction_details2: 'Type - Abonnement'})"><button>Inschrijven</button></a>
+        <a href="choose.html" onclick="udata.push({event_name: 'interaction', interaction_name: 'customerChoice', interaction_details1: 'Formule Two', interaction_details2: 'Type - Cadeau'})"><button>Cadeai</button></a>
     </div>
 </body>
 </html>
