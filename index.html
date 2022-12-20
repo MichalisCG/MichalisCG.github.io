@@ -22,12 +22,18 @@
     </script>
 </head>
 <body>
-<h1>Datalayer Test</h1>
+<h1>Datalayer test</h1>
 <h2>GA4 & Adobe Analytics testing</h2>
 <a href="https://github.com/MichalisCG/MichalisCG.github.io.git">GitHub Repo</a>
 <p>Order button</p>
-<a href="choose.html"><button>Order</button></a>
+<a href="choose.html" onclick="udata.push({event_name: 'order', order_id:'BX30294',order_payment_value:'45.00', order_payment_method:'card',order_shipping_fee:'0.50', order_shipping_method:'Bike', order_service_fee:'4.50',order_pickup_point_id:'none',order_product_line:'BX394028' })"><button>Order</button></a>
 <p>Product button</p>
 <a href="choose.html"><button>Product</button></a>
+<h3>Button test GA4</h3>
+<p>Example of a search inside search bar</p>
+<a href="choose.html" onclick="udata.push({event_name: 'product click', products:{products_id:['3X8302'],products_brand:['boni'], products_category:['beers','trappist',undefined,'aperos','belgium'],products_list:['recipies'], products_name:['coq au vin'],products_price:['9.75'],products_quantity:['2'],products_position:['8'] }})"><button>Search</button></a>
+<p>Newsletter (un)subcribe</p>
+<a href="choose.html"><button>Subscribe</button></a>
+<a href="choose.html"><button>Unsubscribe</button></a>
 </body>
 </html>
