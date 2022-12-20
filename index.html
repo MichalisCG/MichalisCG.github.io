@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datalayer</title>
-    <style>
-        body
-        {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4V6H1GZH9G"></script>
@@ -22,15 +17,17 @@
     </script>
 </head>
 <body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 <h1>Datalayer test</h1>
 <h2>GA4 & Adobe Analytics testing</h2>
-<h3>Link to github repository</h3>
-<a href="https://github.com/MichalisCG/MichalisCG.github.io.git"><button>GitHub</button></a>
 <h3>Order button</h3>
 <a href="choose.html" onclick="udata.push({event_name: 'order', order_id:'BX30294',order_payment_value:'45.00', order_payment_method:'card',order_shipping_fee:'0.50', order_shipping_method:'Bike', order_service_fee:'4.50',order_pickup_point_id:'none',order_product_line:'BX394028' })"><button>Order</button></a>
 <h3>Product button</h3>
 <a href="choose.html"><button>Product</button></a>
-<h3>Button test GA4</h3>
+<h2>Button test GA4</h2>
 <h3>Example of a search inside search bar</h3>
 <a href="choose.html" onclick="udata.push({event_name: 'product click', products:{products_id:['3X8302'],products_brand:['boni'], products_category:['beers','trappist',undefined,'aperos','belgium'],products_list:['recipies'], products_name:['coq au vin'],products_price:['9.75'],products_quantity:['2'],products_position:['8'] }})"><button>Search</button></a>
 <h3>Newsletter (un)subcribe</h3>
