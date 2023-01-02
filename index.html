@@ -42,6 +42,23 @@
     </script>
 </head>
 <body>
+    <script type="text/javascript">
+        var utag_data = {
+          event_name : "", // Tealium variable to identify unique events eg. social_share, user_login, etc.
+          tealium_event : "", // Identifies the unique names of tracked events.
+          page_type : "", // Tealium variable to identify page types/templates eg. home, category, search, product, etc.
+          link_click : "" // 
+        }
+        </script>
+        
+        <!-- Loading script asynchronously -->
+        <script type="text/javascript">
+            (function(a,b,c,d){
+            a='https://tags.tiqcdn.com/utag/colruytgroup/test-mvs/prod/utag.js';
+            b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+            a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+            })();
+        </script>
     <ul>
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="contact.html">Contact</a></li>
