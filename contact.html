@@ -15,6 +15,16 @@
           link_click : "" // 
         }
     </script>
+
+    <!-- Loading script asynchronously -->
+    <script type="text/javascript">
+        (function(a,b,c,d){
+        a='https://tags.tiqcdn.com/utag/colruytgroup/test-mvs/prod/utag.js';
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+        })();
+    </script>
+    
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a class="active" href="contact.html">Contact</a></li>
